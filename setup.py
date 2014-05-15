@@ -4,7 +4,9 @@
 from setuptools import setup
 
 
-from . import irequests as target
+import irequests as target
+
+
 setup(
     name=target.__name__,
     version=target.__version__,
@@ -12,7 +14,6 @@ setup(
     long_description=target.__doc__,
     author=target.__author__,
     author_email=target.__author_email__,
-    url=target.__url__,
     classifiers=target.__classifiers__,
     license=target.__license__,
     py_packages=[target.__name__, ],
